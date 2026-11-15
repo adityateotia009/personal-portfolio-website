@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Aditya</span></h1>
+            <p>Aspiring Web Developer & Cloud Enthusiast</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <p class="about-text">
+            I am a passionate student interested in web development and cloud computing. 
+            I enjoy building clean, responsive websites and learning how to deploy applications on cloud platforms like AWS.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-container">
+            <span class="skill-badge">HTML5</span>
+            <span class="skill-badge">CSS3</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">Git & GitHub</span>
+            <span class="skill-badge">AWS S3</span>
+            <span class="skill-badge">Responsive Design</span>
+        </div>
+    </section>
+
+    <!-- Education & Achievements Section -->
+    <section id="education" class="section">
+        <h2 class="section-title">Education & Achievements</h2>
+        <div class="grid-2">
+            <div class="card">
+                <h3>Education</h3>
+                <p><strong>Bachelor of Technology / Science in Computer Science</strong></p>
+                <p>KIET Deemed to be university | 2023 – 2027</p>
+                <p>Relevant Coursework: Web Technologies, Cloud Computing, Data Structures.</p>
+            </div>
+            <div class="card">
+                <h3>Achievements</h3>
+                <ul class="achievement-list">
+                    <li>Completed AWS Cloud Practitioner Essentials</li>
+                    <li>Built and deployed static websites using Amazon S3</li>
+                    <li>Active contributor to college coding club</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-light">
+        <h2 class="section-title">Projects</h2>
+        <div class="grid-2">
+            <div class="card">
+                <h3>Personal Portfolio Website</h3>
+                <p>A responsive personal website built with HTML, CSS, and JavaScript, hosted statically on Amazon S3.</p>
+                <a href="#" class="project-link">View Code &rarr;</a>
+            </div>
+            <div class="card">
+                <h3>Task Tracker App</h3>
+                <p>A simple to-do list web application featuring local storage support and task filtering.</p>
+                <a href="#" class="project-link">View Code &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact Me</h2>
+        <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <small class="error" id="nameError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                <small class="error" id="emailError"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Write your message"></textarea>
+                <small class="error" id="messageError"></small>
+            </div>
+
+            <button type="submit" class="btn">Send Message</button>
+            <p id="formSuccess" class="success-msg"></p>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
